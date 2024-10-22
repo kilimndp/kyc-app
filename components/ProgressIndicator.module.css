@@ -1,0 +1,58 @@
+.progressIndicator {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.stepIcon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: var(--muted);
+  color: var(--muted-foreground);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.stepLabel {
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.active .stepIcon {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.active .stepLabel {
+  color: var(--foreground);
+}
+
+.completed .stepIcon {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.checkIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+@media (max-width: 640px) {
+  .stepLabel {
+    display: none;
+  }
+}

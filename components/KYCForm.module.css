@@ -1,0 +1,24 @@
+.kycForm {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--background);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.privacyInfo {
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+  text-align: center;
+}
+
+.privacyLink {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.privacyLink:hover {
+  color: var(--primary-foreground);
+}
